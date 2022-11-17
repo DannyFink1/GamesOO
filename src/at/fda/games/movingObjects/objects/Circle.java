@@ -19,6 +19,7 @@ public class Circle {
     }
 
     public void render(Graphics graphics){
+
         graphics.drawOval(this.x,this.y,50,50);
     }
 

@@ -1,4 +1,4 @@
-package at.fda.games.aa1.objects;
+package at.fda.games.snowworldAA2.objects;
 
 import org.newdawn.slick.Graphics;
 
