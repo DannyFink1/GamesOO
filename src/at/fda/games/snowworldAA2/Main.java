@@ -20,7 +20,7 @@ public class Main extends BasicGame {
     public void init(GameContainer gameContainer) throws SlickException {
         SIZE size;
         actors = new ArrayList<Actor>();
-        for (int i = 0; i < 120; i++) {
+        for (int i = 0; i < 100; i++) {
             if(i % 3 == 0)
                 size = SIZE.BIG;
             else if(i % 3 == 1)

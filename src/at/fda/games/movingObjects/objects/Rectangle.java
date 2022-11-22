@@ -1,12 +1,17 @@
 package at.fda.games.movingObjects.objects;
 
+import at.fda.games.snowworldAA2.objects.HitboxActor;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.geom.Shape;
 
-public class Rectangle {
+public class Rectangle implements HitboxActor {
+
 
     private enum DIRECTION {RIGHT,LEFT,UP,DOWN};
     private float x;
     private float y;
+
+    private org.newdawn.slick.geom.Rectangle hitBox;
 
     private DIRECTION objectDirection;
     private float speed;
@@ -16,9 +21,12 @@ public class Rectangle {
         this.y = y;
         this.speed = speed;
         this.objectDirection = DIRECTION.RIGHT;
+        this.hitBox = new org.newdawn.slick.geom.Rectangle(x,y,40,40);
+
     }
 
     public void render(Graphics graphics){
+        graphics.draw(hitBox);
         graphics.drawRect(this.x,this.y,100,100);
     }
 
@@ -32,7 +40,7 @@ public class Rectangle {
 
 
         }
-        System.out.println(objectDirection);
+       // System.out.println(objectDirection);
         if(this.objectDirection == DIRECTION.DOWN) {
 
             if (this.y < 500)
@@ -59,5 +67,14 @@ public class Rectangle {
                 this.objectDirection = DIRECTION.RIGHT;
 
         }
+        hitBox.setY(this.y);
+        hitBox.setX(this.x);
     }
+
+
+    @Override
+    public Shape getCollissionShape() {
+        return this.hitBox;
+    }
+
 }
