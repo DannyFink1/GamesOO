@@ -10,7 +10,7 @@ import org.newdawn.slick.geom.Shape;
 public class Snake implements HitboxActor{
 
 
-    private float x,y,speed;
+    private float snakeX,snakeY,snakeSpeed;
 
 
 
@@ -18,12 +18,17 @@ public class Snake implements HitboxActor{
     private DIRECTION direction;
     private Image image;
     private Shape snakeHitbox;
-    private Rectangle rectangle;
+    private Apple appleHitbox;
+    private int points;
+    private boolean isHit;
 
-    public Snake() {
+    public Snake(Apple apple) {
 
-        this.x = this.y = 100;
-        this.snakeHitbox = new Rectangle(x,y,50,50);
+        this.snakeX = this.snakeY = 100;
+        this.snakeHitbox = new Rectangle(snakeX,snakeY,50,50);
+        this.appleHitbox = apple;
+        this.points = 0;
+        this.isHit = false;
 
     }
 
@@ -31,38 +36,49 @@ public class Snake implements HitboxActor{
     public void update(GameContainer gameContainer, int delta) {
         if(gameContainer.getInput().isKeyDown(Input.KEY_S)){
             direction = DIRECTION.DOWN;
-            System.out.println("DOWN");
+            //System.out.println("DOWN");
         }else if (gameContainer.getInput().isKeyDown(Input.KEY_W)) {
             direction = DIRECTION.UP;
-            System.out.println("UP");
+            //System.out.println("UP");
         }else if(gameContainer.getInput().isKeyDown(Input.KEY_D)){
             direction = DIRECTION.RIGHT;
-            System.out.println("RIGHT");
+            //System.out.println("RIGHT");
         }else if(gameContainer.getInput().isKeyDown(Input.KEY_A)){
             direction = DIRECTION.LEFT;
-            System.out.println("LEFT");
+            //System.out.println("LEFT");
         }
 
         if(direction == DIRECTION.DOWN){
-            y+=(float) delta/3;
+            snakeY+=(float) delta/3;
         }else if (direction == DIRECTION.UP) {
-            y-=(float) delta/3;
+            snakeY-=(float) delta/3;
         }else if(direction == DIRECTION.RIGHT){
-            x+=(float) delta/3;
+            snakeX+=(float) delta/3;
         }else if(direction == DIRECTION.LEFT){
-            x-=(float) delta/3;
+            snakeX-=(float) delta/3;
         }
 
-        this.snakeHitbox.setX(x);
-        this.snakeHitbox.setY(y);
+        this.snakeHitbox.setX(snakeX);
+        this.snakeHitbox.setY(snakeY);
+
+        if(snakeHitbox.intersects(appleHitbox.getCollisionShape()) && !isHit){
+            System.out.println("Hit");
+            this.points++;
+            this.isHit = true;
+            this.appleHitbox.gotDestroyed();
+        }
+
+        if(isHit && !snakeHitbox.intersects(appleHitbox.getCollisionShape())){
+            this.isHit = false;
+        }
 
     }
 
     @Override
     public void render(Graphics graphics) {
         graphics.draw(snakeHitbox);
-        graphics.fillRect(x,y,50,50);
-
+        graphics.fillRect(this.snakeX,this.snakeY,50,50);
+        graphics.drawString("Points: " + this.points, 400,100);
     }
 
     @Override

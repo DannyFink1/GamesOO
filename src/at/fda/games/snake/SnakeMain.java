@@ -26,8 +26,9 @@ public class SnakeMain extends BasicGame {
         actors = new ArrayList<Actor>();
 
         for (int i = 0; i < 1; i++) {
-            Snake snake = new Snake();
-            Apple apple = new Apple(snake);
+            Apple apple = new Apple();
+            Snake snake = new Snake(apple);
+
             actors.add(apple);
             actors.add(snake);
         }
@@ -37,8 +38,9 @@ public class SnakeMain extends BasicGame {
     public void update(GameContainer gameContainer, int i) throws SlickException {
         for( Actor actor : actors){
             actor.update(gameContainer, i);
-
         }
+
+
     }
 
     @Override
@@ -48,7 +50,7 @@ public class SnakeMain extends BasicGame {
         for( Actor actor : actors){
             actor.render(graphics);
         }
-        graphics.drawString("Punkte: " + points);
+
     }
 
     public static void main(String[] argv) {

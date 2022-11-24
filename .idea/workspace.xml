@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="105ae761-f694-43b2-8d83-b442078455b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/HitboxActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Snake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TdoT/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TdoT/HitboxActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TdoT/Pipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TdoT/TestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/pingPong/Ball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/pingPong/PinkPongMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/pingPong/Player1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/pingPong/Player2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/objects/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/objects/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/physicTest/PhysicMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/physicTest/PhysicMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/fda/games/movingObjects/objects/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/movingObjects/objects/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/fda/games/snake/snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/snake/SnakeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/snake/SnakeMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/snake/SnakeMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/snake/objects/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/snake/objects/Apple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/snake/objects/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/snake/objects/Snake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/snake/SnakeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/snake/SnakeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Snake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,15 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/GamesOO/assets&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/GamesOO/src/TdoT",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GamesOO\src\TdoT" />
       <recent name="C:\GamesOO\assets" />
     </key>
   </component>
@@ -115,7 +121,8 @@
       <workItem from="1669187140085" duration="7552000" />
       <workItem from="1669197650275" duration="1506000" />
       <workItem from="1669205211070" duration="985000" />
-      <workItem from="1669266860743" duration="2043000" />
+      <workItem from="1669266860743" duration="6770000" />
+      <workItem from="1669287093435" duration="3403000" />
     </task>
     <servers />
   </component>
