@@ -74,6 +74,7 @@ public class Rectangle implements HitboxActor {
 
     @Override
     public Shape getCollissionShape() {
+
         return this.hitBox;
     }
 

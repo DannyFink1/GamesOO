@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="105ae761-f694-43b2-8d83-b442078455b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/movingObjects/objects/Bullet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/physicTest/PhysicMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/snake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snowworldAA2/objects/HitboxActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/HitboxActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/fda/games/snake/objects/Snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/objects/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/objects/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/objects/Ellipse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/objects/Ellipse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/objects/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/aa1/objects/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/MovingObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/MovingObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/objects/Rectangle$DIRECTION.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/objects/Rectangle$DIRECTION.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/background.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/objects/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/movingObjects/objects/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/fda/games/movingObjects/MovingObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/movingObjects/MovingObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/physicTest/PhysicMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/physicTest/PhysicMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/fda/games/movingObjects/objects/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/movingObjects/objects/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/fda/games/snowworldAA2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/snowworldAA2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/snake/snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/snake/SnakeMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -45,14 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Daniel/Documents/GitHub/GamesOO"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GamesOO/assets&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GamesOO\assets" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="AlphaMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="AlphaMapTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.AlphaMapTest" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
@@ -95,7 +96,6 @@
       <list>
         <item itemvalue="Application.MovingObjects" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.AlphaMapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -111,6 +111,11 @@
       <option name="presentableId" value="Default" />
       <updated>1582964206231</updated>
       <workItem from="1669027644478" duration="6250000" />
+      <workItem from="1669184745502" duration="196000" />
+      <workItem from="1669187140085" duration="7552000" />
+      <workItem from="1669197650275" duration="1506000" />
+      <workItem from="1669205211070" duration="985000" />
+      <workItem from="1669266860743" duration="2043000" />
     </task>
     <servers />
   </component>
