@@ -1,7 +1,6 @@
 package at.fda.games.physicTest;
 
 import org.newdawn.slick.*;
-import org.newdawn.slick.tests.CurveTest;
 
 public class PhysicMain extends BasicGame {
 
