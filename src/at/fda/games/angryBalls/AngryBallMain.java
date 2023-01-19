@@ -1,8 +1,10 @@
 package at.fda.games.angryBalls;
 
 
+import at.fda.games.angryBalls.objects.Player;
+import at.fda.games.angryBalls.objects.Raspberry;
+import at.fda.games.angryBalls.objects.Walls;
 import org.newdawn.slick.*;
-import org.newdawn.slick.geom.Shape;
 
 public class AngryBallMain extends BasicGame {
 
