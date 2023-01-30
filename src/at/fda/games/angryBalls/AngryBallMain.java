@@ -6,13 +6,21 @@ import at.fda.games.angryBalls.objects.Raspberry;
 import at.fda.games.angryBalls.objects.Walls;
 import org.newdawn.slick.*;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class AngryBallMain extends BasicGame {
 
     private Player player;
     private Walls walls;
     private Raspberry raspberry;
     private String InputPuffer = "aSadadadaddwa";
+    private FileWriter fw;
+    private FileReader fr;
 
+    String text = "";
 
 
     @Override
@@ -21,6 +29,8 @@ public class AngryBallMain extends BasicGame {
         this.raspberry = new Raspberry();
         this.player = new Player(40,40, 1.5f, walls, raspberry);
 
+
+
     }
 
     @Override
@@ -28,13 +38,28 @@ public class AngryBallMain extends BasicGame {
         player.update(gameContainer, i);
         walls.update(gameContainer, i);
         raspberry.update(gameContainer, i);
+
         if(player.checkIfDead())
         {
+            try {
+                FileWriter fw = new FileWriter("C://File//scores.txt");
+                FileReader fr = new FileReader("C://File/scores.txt");
+                if(player.getPoints() > (int)fr.read())
+                {
+                    fw.write("" + player.getPoints());
+                    System.out.println("Du hast den Highscore geknackt!");
+                }
+                fr.close();
+                fw.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
             gameContainer.exit();
 
 
         }
         //raspberry.getRaspberryHitbox();
+
     }
 
     @Override

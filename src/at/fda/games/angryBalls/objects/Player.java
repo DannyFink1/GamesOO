@@ -102,6 +102,10 @@ public class Player implements HitBoxActor {
         System.out.flush();
 
     }
+
+    public int getPoints() {
+        return points;
+    }
 }
 
 
