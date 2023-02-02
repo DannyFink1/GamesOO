@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="105ae761-f694-43b2-8d83-b442078455b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/at/fda/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/angryBalls/scores.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/angryBalls/text.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/fda/games/e_UntitledDimeGame/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/AngryBallMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/AngryBallMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/d_snowWorld/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/d_snowWorld/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/AngryBallMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/angryBalls/AngryBallMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/objects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/angryBalls/objects/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +63,26 @@
       <recent name="at.fda.actors" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AngryBallMain">
     <configuration name="AlphaMapTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.AlphaMapTest" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.newdawn.slick.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AngryBallMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.fda.games.angryBalls.AngryBallMain" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fda.games.angryBalls.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AngryBallMain" />
         <item itemvalue="Application.MovingObjects" />
         <item itemvalue="Application.Main" />
       </list>
@@ -153,7 +160,8 @@
       <workItem from="1674113101538" duration="2609000" />
       <workItem from="1674719177288" duration="1926000" />
       <workItem from="1674829198536" duration="370000" />
-      <workItem from="1675074780887" duration="5157000" />
+      <workItem from="1675074780887" duration="5479000" />
+      <workItem from="1675321413285" duration="4149000" />
     </task>
     <servers />
   </component>

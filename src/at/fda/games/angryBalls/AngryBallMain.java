@@ -19,7 +19,6 @@ public class AngryBallMain extends BasicGame {
     private String InputPuffer = "aSadadadaddwa";
     private FileWriter fw;
     private FileReader fr;
-
     String text = "";
 
 
@@ -41,16 +40,28 @@ public class AngryBallMain extends BasicGame {
 
         if(player.checkIfDead())
         {
+            char[] chars = new char[2];
             try {
-                FileWriter fw = new FileWriter("C://File//scores.txt");
                 FileReader fr = new FileReader("C://File/scores.txt");
-                if(player.getPoints() > (int)fr.read())
+                fr.read(chars, 0, 2);
+                System.out.println(chars.toString();
+                fr.close();
+                FileWriter fw = new FileWriter("C://File//scores.txt");
+
+                if(player.getPoints() > 0)
                 {
-                    fw.write("" + player.getPoints());
+                    if(player.getPoints() < 10)
+                        fw.write("0" + player.getPoints());
+                    else
+                        fw.write("" + player.getPoints());
                     System.out.println("Du hast den Highscore geknackt!");
                 }
-                fr.close();
+                else {
+                    System.out.println("Schade");
+                }
+
                 fw.close();
+                ;
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
