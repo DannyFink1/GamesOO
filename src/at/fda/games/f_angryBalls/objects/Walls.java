@@ -1,4 +1,4 @@
-package at.fda.games.angryBalls.objects;
+package at.fda.games.f_angryBalls.objects;
 
 import at.fda.actors.HitBoxActor;
 import org.newdawn.slick.GameContainer;
@@ -7,7 +7,6 @@ import org.newdawn.slick.geom.Rectangle;
 import org.newdawn.slick.geom.Shape;
 
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Walls implements HitBoxActor {

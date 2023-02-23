@@ -1,4 +1,4 @@
-package at.fda.games.angryBalls.objects;
+package at.fda.games.f_angryBalls.objects;
 
 import at.fda.actors.HitBoxActor;
 
@@ -29,7 +29,7 @@ public class Player implements HitBoxActor {
         this.isDead = false;
         this.raspberry = raspberry;
         this.points = 0;
-        this.originalSprite = new BigImage("at/fda/games/angryBalls/objects/talHair.tga", Image.FILTER_NEAREST, 512);
+        this.originalSprite = new BigImage("at/fda/games/f_angryBalls/objects/talHair.tga", Image.FILTER_NEAREST, 512);
         this.player  = this.originalSprite.getScaledCopy(40,40);
 
     }

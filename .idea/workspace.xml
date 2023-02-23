@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="105ae761-f694-43b2-8d83-b442078455b8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/AngryBallMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/angryBalls/AngryBallMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/AngryBallMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/objects/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/objects/Raspberry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/objects/Walls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/objects/raspberry.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/objects/talHair.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/scores.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/fda/games/angryBalls/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/AngryBallMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/AngryBallMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/objects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/objects/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/objects/Raspberry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/objects/Raspberry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/objects/Walls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/objects/Walls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/objects/raspberry.tga" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/objects/raspberry.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/objects/talHair.tga" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/objects/talHair.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/scores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/fda/games/angryBalls/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/fda/games/f_angryBalls/text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +61,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -63,7 +79,7 @@
       <recent name="at.fda.actors" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AngryBallMain">
+  <component name="RunManager">
     <configuration name="AlphaMapTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.AlphaMapTest" />
       <module name="Slick2DTemplate" />
@@ -78,11 +94,11 @@
       </method>
     </configuration>
     <configuration name="AngryBallMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.fda.games.angryBalls.AngryBallMain" />
+      <option name="MAIN_CLASS_NAME" value="at.fda.games.f_angryBalls.AngryBallMain" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="at.fda.games.angryBalls.*" />
+          <option name="PATTERN" value="at.fda.games.f_angryBalls.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,6 +178,9 @@
       <workItem from="1674829198536" duration="370000" />
       <workItem from="1675074780887" duration="5479000" />
       <workItem from="1675321413285" duration="4149000" />
+      <workItem from="1675753904956" duration="55000" />
+      <workItem from="1675753974223" duration="323000" />
+      <workItem from="1677139972226" duration="1074000" />
     </task>
     <servers />
   </component>

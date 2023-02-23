@@ -1,4 +1,4 @@
-package at.fda.games.angryBalls.objects;
+package at.fda.games.f_angryBalls.objects;
 
 import at.fda.actors.HitBoxActor;
 import org.newdawn.slick.*;
@@ -16,7 +16,7 @@ public class Raspberry implements HitBoxActor {
     private float x_Pos, y_Pos;
     private Random random;
     public Raspberry() throws SlickException {
-        this.originalSprite = new BigImage("at/fda/games/angryBalls/objects/raspberry.tga", Image.FILTER_NEAREST, 512);
+        this.originalSprite = new BigImage("at/fda/games/f_angryBalls/objects/raspberry.tga", Image.FILTER_NEAREST, 512);
         this.raspberry  = this.originalSprite.getScaledCopy(40,40);
         this.random = new Random();
         this.x_Pos = random.nextInt(700-100)+100;

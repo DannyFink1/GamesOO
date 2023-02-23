@@ -1,12 +1,11 @@
-package at.fda.games.angryBalls;
+package at.fda.games.f_angryBalls;
 
 
-import at.fda.games.angryBalls.objects.Player;
-import at.fda.games.angryBalls.objects.Raspberry;
-import at.fda.games.angryBalls.objects.Walls;
+import at.fda.games.f_angryBalls.objects.Player;
+import at.fda.games.f_angryBalls.objects.Raspberry;
+import at.fda.games.f_angryBalls.objects.Walls;
 import org.newdawn.slick.*;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -43,12 +42,15 @@ public class AngryBallMain extends BasicGame {
             char[] chars = new char[2];
             try {
                 FileReader fr = new FileReader("C://File/scores.txt");
-                fr.read(chars, 0, 2);
-                System.out.println(chars.toString();
+                int x = fr.read();
+                chars[0] = 'c';
+                chars[1] = '2';
+                System.out.println(chars[0]);
+                System.out.println(player.getPoints());
                 fr.close();
                 FileWriter fw = new FileWriter("C://File//scores.txt");
 
-                if(player.getPoints() > 0)
+                if(player.getPoints() > x)
                 {
                     if(player.getPoints() < 10)
                         fw.write("0" + player.getPoints());
@@ -57,11 +59,12 @@ public class AngryBallMain extends BasicGame {
                     System.out.println("Du hast den Highscore geknackt!");
                 }
                 else {
+                    fw.write(x);
                     System.out.println("Schade");
                 }
 
                 fw.close();
-                ;
+
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
